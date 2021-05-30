@@ -22,6 +22,7 @@
   --color-footer-icon-bg:#44454E;
   --backdrop:rgba(0, 0, 0, 0.2);
   --portfolio-overlay:rgba(33, 150, 243, 0.9);
+  --overlay-work:rgba(47, 48, 58, 0.8);
 }
 body {
   font-family: var(--main-font);
@@ -337,6 +338,24 @@ button {
 }
 .work-item {
   flex-basis: calc((100% - 2 * 30px) / 3);
+  position: relative;
+}
+.work-overlay{
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  left: 0;
+  bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  margin: 0;
+  color: var(--color-white);
+  background-color: var(--overlay-work);
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 1.14;
+  text-align: center;
 }
 .work-list {
   display: flex;
